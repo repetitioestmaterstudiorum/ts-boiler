@@ -1,0 +1,10 @@
+# compiled output
+/node_modules
+/build
+
+# OS and VSCode
+.DS_Store
+.history
+
+# project files
+.env
