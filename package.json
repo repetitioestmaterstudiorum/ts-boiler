@@ -14,6 +14,9 @@
 		"make-bundle": "esbuild src --bundle --platform=node --minify --sourcemap=external --outfile=build/main.js",
 		"lint-tsc": "eslint src/**/*.ts && tsc -p tsconfig.json"
 	},
+	"engines": {
+		"node": "^16"
+	},
 	"dependencies": {
 		"pm2": "^5.2.0"
 	},
