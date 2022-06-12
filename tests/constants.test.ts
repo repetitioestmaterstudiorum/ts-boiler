@@ -1,5 +1,7 @@
-import { C } from '/src/constants'
+import { C } from '../src/constants'
 
-test('C contains port', () => {
-	expect(C.app?.port).toBeDefined()
+describe('test template', () => {
+	test('C contains port', () => {
+		expect(C.app?.port).toBeDefined()
+	})
 })

@@ -38,6 +38,6 @@
 		"incremental": false, // Write no .tsbuildinfo file
 		"outDir": "build/tsc" // (just in case)
 	},
-	"include": ["src/**/*", "tests/**/*", "types/**/*"],
+	"include": ["src", "tests", "types", "jest.config.ts"],
 	"exclude": ["node_modules", "build"]
 }
