@@ -1,4 +1,4 @@
-import { C } from '../src/constants'
+import { C } from '/src/constants'
 
 describe('test template', () => {
 	test('C contains port', () => {
