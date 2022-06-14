@@ -38,6 +38,12 @@
 		"incremental": false, // Write no .tsbuildinfo file
 		"outDir": "build/tsc" // (just in case)
 	},
+
 	"include": ["src", "tests", "types", "jest.config.ts"],
-	"exclude": ["node_modules", "build"]
+	"exclude": ["node_modules", "build"],
+
+	// make sure ts-node understands the paths config above
+	"ts-node": {
+		"require": ["tsconfig-paths/register"]
+	}
 }
