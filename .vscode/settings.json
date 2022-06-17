@@ -1,8 +1,8 @@
 {
-	"search.exclude": {
-		"**/node_modules": true,
-		"**/.history": true,
-		"**/build": true,
-		"package-lock.json": true
-	}
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.history": true,
+    "**/build": true,
+    "package-lock.json": true
+  }
 }

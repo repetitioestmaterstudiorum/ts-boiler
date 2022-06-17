@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "ts-boiler",
+      "script": "build/main.js",
+      "log_file": "/app/logs/ts-boiler.log",
+      "error_file": "/app/logs/ts-boiler-err.log"
+    }
+  ]
+}

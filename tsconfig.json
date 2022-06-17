@@ -1,49 +1,49 @@
 {
-	// https://www.typescriptlang.org/tsconfig/
-	"compilerOptions": {
-		/* Basic Options */
-		"target": "es2017",
-		"module": "commonjs",
-		"removeComments": true,
-		"typeRoots": ["./node_modules/@types"],
-		"types": ["node", "jest"],
+  // https://www.typescriptlang.org/tsconfig/
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2017",
+    "module": "commonjs",
+    "removeComments": true,
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "jest"],
 
-		/* Compatibility */
-		"resolveJsonModule": true,
-		"esModuleInterop": true,
-		"allowJs": true,
-		"checkJs": false,
+    /* Compatibility */
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "checkJs": false,
 
-		/* Strict Type-Checking Options */
-		"strict": true,
-		"noImplicitAny": true,
-		"strictNullChecks": true,
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
 
-		/* Additional Checks */
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noImplicitReturns": false,
-		"noFallthroughCasesInSwitch": false,
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
 
-		/* Module Resolution Options */
-		"baseUrl": ".",
-		"paths": {
-			/* Support absolute imports with a leading '/' */
-			"/*": ["*"]
-		},
-		"moduleResolution": "node",
+    /* Module Resolution Options */
+    "baseUrl": ".",
+    "paths": {
+      /* Support absolute imports with a leading '/' */
+      "/*": ["*"]
+    },
+    "moduleResolution": "node",
 
-		// Use esbuild for building
-		"noEmit": true, // Write no JS files
-		"incremental": false, // Write no .tsbuildinfo file
-		"outDir": "build/tsc" // (just in case)
-	},
+    // Use esbuild for building
+    "noEmit": true, // Write no JS files
+    "incremental": false, // Write no .tsbuildinfo file
+    "outDir": "build/tsc" // (just in case)
+  },
 
-	"include": ["src", "tests", "types", "jest.config.ts"],
-	"exclude": ["node_modules", "build"],
+  "include": ["src", "tests", "types", "jest.config.ts"],
+  "exclude": ["node_modules", "build"],
 
-	// make sure ts-node understands the paths config above
-	"ts-node": {
-		"require": ["tsconfig-paths/register"]
-	}
+  // make sure ts-node understands the paths config above
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
 }
