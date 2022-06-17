@@ -11,5 +11,14 @@
 	"proseWrap": "preserve",
 	"singleQuote": true,
 	"useTabs": true,
-	"tabWidth": 4
+	"tabWidth": 4,
+	"overrides": [
+		{
+			"files": ["*.json", "*.yml", "*.yaml"],
+			"options": {
+				"useTabs": false,
+				"tabWidth": 2
+			}
+		}
+	]
 }
