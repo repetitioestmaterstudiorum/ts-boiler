@@ -2,11 +2,12 @@
   // https://www.typescriptlang.org/tsconfig/
   "compilerOptions": {
     /* Basic Options */
-    "target": "es2017",
-    "module": "commonjs",
+    "target": "ES2017",
+    "module": "CommonJS",
+
     "removeComments": true,
     "typeRoots": ["./node_modules/@types"],
-    "types": ["node", "jest"],
+    "types": ["node"],
 
     /* Compatibility */
     "resolveJsonModule": true,
@@ -39,7 +40,7 @@
     "outDir": "build/tsc" // (just in case)
   },
 
-  "include": ["src", "tests", "types", "jest.config.ts"],
+  "include": ["src", "tests", "types", "vitest.config.ts", "esbuild.mjs"],
   "exclude": ["node_modules", "build"],
 
   // make sure ts-node understands the paths config above
