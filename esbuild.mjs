@@ -5,7 +5,7 @@ buildSync({
 	bundle: true,
 	minify: true,
 	platform: 'node',
+	sourcemap: 'external',
 	target: ['node16'],
-	external: ['./node_modules/*'],
 	outfile: 'build/main.js',
 })
