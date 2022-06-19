@@ -14,13 +14,6 @@ WORKDIR /app
 COPY --from=builder /app/build ./build
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json .
-COPY --from=builder /app/pm2.json .
-
-# create logs directory and files, change file owner to node user
-RUN mkdir /app/logs
-RUN touch /app/logs/ts-boiler.log
-RUN touch /app/logs/ts-boiler-err.log
-RUN chown -R node:node /app/logs
 
 USER node
 CMD ["npm", "start"]
