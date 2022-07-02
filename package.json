@@ -8,12 +8,12 @@
     "dev": "nodemon -r dotenv/config src/index.ts",
     "ts-node": "ts-node",
     "test": "vitest run",
-    "test:watch": "vitest",
+    "test:watch": "vitest watch",
     "test:full": "npm run lint && npm run tsc && npm test",
     "lint": "eslint src/**/*.ts",
     "tsc": "tsc -p tsconfig.json",
     "build": "rimraf build/ && node esbuild.mjs",
-    "start": "pm2 start build/main.js --no-daemon --name='ts-boiler'",
+    "start": "pm2 start build/main.js -o '/dev/null' -e '/dev/null' --no-daemon --name='ts-boiler'",
     "pm2": "./node_modules/pm2/bin/pm2"
   },
   "engines": {
