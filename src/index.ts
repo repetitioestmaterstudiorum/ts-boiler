@@ -1,9 +1,9 @@
-import { C } from '/src/constants'
+import { C } from '/src/config'
 
 // ---
 
-function printConstants(): void {
-	console.log('constants:', JSON.stringify(C, null, 2))
+function printConfig(): void {
+	console.log('config:', JSON.stringify(C, null, 2))
 }
 
-printConstants()
+printConfig()
