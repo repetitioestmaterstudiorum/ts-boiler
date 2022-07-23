@@ -4,9 +4,9 @@ Boilerplate for simple backend services in TypeScript.
 
 ## develop
 
--   create a .env file for your secrets: `touch .env`
+-   create a .env file for your secrets: `touch .env` (if secrets are needed)
 -   develop: `npm run dev`
--   test: `npm run test` or `npm run test:watch`. Both will lint and run tsc first
+-   test: `npm test` or `npm run test:full` if you're feeling lucky
 -   execute just one file: `npm run ts-node ...filepath and name...`
 
 ## deploy
