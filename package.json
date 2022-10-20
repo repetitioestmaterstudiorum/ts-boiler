@@ -8,12 +8,15 @@
     "dev": "nodemon -r dotenv/config src/index.ts",
     "ts-node": "ts-node",
     "test": "vitest watch",
-    "test:full": "npm run lint && npm run tsc && npm test && npm run build",
+    "test:full": "npm run lint && npm run tsc && npm test",
+    "test:crazy": "npm run reset && npm run test:full && npm run build",
     "lint": "eslint src/**/*.ts",
     "tsc": "tsc -p tsconfig.json",
     "build": "rimraf build/ && node esbuild.mjs",
     "start": "pm2 start build/main.js -o '/dev/null' -e '/dev/null' --no-daemon --name='ts-boiler'",
-    "pm2": "./node_modules/pm2/bin/pm2"
+    "pm2": "./node_modules/pm2/bin/pm2",
+    "clean": "rimraf package-lock.json && rimraf build/ && rimraf node_modules/",
+    "reset": "npm run clean && npm i"
   },
   "engines": {
     "node": "^16"
